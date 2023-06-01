@@ -49,9 +49,6 @@ void timer_setup() {
   // Setează valoarea OCR1A la valoarea maxima posibila pe 16 biti 
   OCR1A = 65535;
 
-  // 3 secunde cu prescaler 1024
-  OCR1B = 49151;
-
   // Activare întrerupere TIMER1_COMPA
   TIMSK1 |= (1 << OCIE1A);
 
